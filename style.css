@@ -1,0 +1,259 @@
+nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(242, 183, 182);
+}
+
+footer {
+    position: sticky;
+    background-image: url('icoontjes/kathoofd.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+footer nav ul {
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-top: 3.5em;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(242, 183, 182);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    text-align: left;
+    margin: 2rem;
+    color: rgb(255, 255, 255);
+
+}
+
+main h1 {
+    font-size: xx-large;
+    
+}
+
+main h2 {
+    font-size: medium;
+    padding-top: 2rem;
+    margin-bottom: -0.5rem;
+}
+
+main h3 {
+    font-size: medium;
+    margin-bottom: -0.5rem;
+}
+
+main p {
+    font-size: small;
+}
+
+.logo {
+    height: 8rem;
+    padding-top: 1.5rem;
+}
+
+.donatie-icoon {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    width: 8rem; 
+    height: 8rem;
+    
+}
+
+.donatie-plan{
+    width: 10rem; 
+    height: 8rem;
+}
+
+.kattenalles {
+    color: rgb(60, 60, 60); /* Donkerdere tekstkleur zoals voorbeeld */
+    display: flex;
+    align-items: center; /* Centreer afbeelding en tekst verticaal */
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Zachtere schaduw */
+    max-width: 300px; /* Beperk breedte voor consistentie */
+    margin: 1rem auto;
+    padding: 1rem; /* Extra padding om het ingesloten effect te versterken */
+    margin-top: 2rem; /* Vergroot de ruimte boven de kaart */
+}
+
+.kat-foto {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    background-color: #E9EBEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.kat-foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.kat-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+}
+
+
+
+.kat-info h2 {
+    font-size: 1.25rem; /* Grotere titel */
+    color: rgb(42, 42, 42); /* Donkerdere kleur */
+    margin-top: -2rem;
+    margin-bottom: -0.1rem;
+}
+
+.kat-info p {
+    font-size: 0.7rem; /* Kleiner lettertype voor beschrijvingen */
+    color: rgb(100, 100, 100); /* Lichtgrijze kleur voor subtiele tekst */
+    margin: 0.2rem 0;
+}
+
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1px 13px rgb(255, 255, 255);
+    border-radius: 2rem;
+    max-height: 500px;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('icoontjes/hartje.png');
+    background-size: cover;
+    opacity: 0.75;
+    transition: opacity 250ms ease;
+}
+
+.slider-nav a:hover {
+    opacity: 1; /* Volle dekking bij hover */
+}
+
+.contact-info {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: #fffaf0; /* Warme, neutrale achtergrond */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(255, 255, 255);
+    position: relative;
+}
+
+.contact-form h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    color: #ff6f61;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ffccd2;
+    border-radius: 15px; /* Ronding voor een schattige uitstraling */
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-image: url('icoontjes/pootafdruk.svg'); /* Voeg een kleine achtergrondafbeelding toe */
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #ff6f61; /* Roze kleur voor de knop */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff8a80;
+}
